@@ -1,0 +1,5 @@
+import express from 'express';
+import { createCourse } from './routes.js';
+const app = express();
+app.get("/", createCourse);
+app.listen(3333);
